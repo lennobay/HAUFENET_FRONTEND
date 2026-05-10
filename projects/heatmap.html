@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <all id ="all">
     <header>
 
         <div>
@@ -46,7 +47,7 @@
 
 
     </footer>
-
+</all>
     <menu id="menu">
         <div class="menu-down">
             <p onclick="closemenu()">Close</p>
@@ -59,10 +60,12 @@
 
 </body>
 <script>
-    function openmenu() {
+        function openmenu() {
+        document.getElementById("all").style.display = "none";
         document.getElementById("menu").style.display = "flex";
     }
     function closemenu() {
+        document.getElementById("all").style.display = "unset"
         document.getElementById("menu").style.display = "none"
     }
 </script>

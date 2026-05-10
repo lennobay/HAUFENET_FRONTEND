@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-const base_api = "http://localhost:8080"
+const base_api = "https://api.haufenet.com"
 
 const redirect_path = 
 

@@ -5,7 +5,7 @@ const redirect_path =  searchParams.get("redirect")
 
 
 
-const base_api = "http://localhost:8080"
+const base_api = "https://api.haufenet.com"
 
 fetch(base_api + "/auth/session?origin=/portal", {
     "method": "GET",
