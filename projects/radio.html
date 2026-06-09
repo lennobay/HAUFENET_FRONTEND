@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haufenet | Project - Sommerfest Radio</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+    <all id="all">
+    <header>
+
+        <div>
+            <h1>HFT</h1>
+        </div>
+        <div id="header-options">
+            <p onclick="window.location.href = '/#docs'">DOCS</p>
+            <p onclick="window.location.href = '/#projects'">PROJECTS</p>
+        </div>
+        <div>
+            <h2 onclick="window.location.href = '/portal'">Portal</h2>
+            <p onclick="openmenu()" id="menu-button">Menu</p>
+        </div>
+    </header>
+
+    <div class="content-up">
+        <div class="content">
+            <h1>Sommerfest Radio</h1>
+            <i>Status: Production ready ( will start on 12.06.2026)</i>
+            <p>I created a WEBUI for a Radio playing at our Summer festival at my school. It features a sleak design and can be found here on Github: https://github.com/lennobay/stream_radio. </p>
+        </div>
+    </div>
+
+    <footer>
+
+        <div>
+            <p onclick="window.location.href = '/imprint'">Imprint</p>
+            <p onclick="window.location.href = '/privacy'">Privacy</p>
+        </div>
+        <div>
+            <p style="font-weight: bold; color: hsl(0 0% 95%);">&copy; haufenet.com</p>
+
+        </div>
+
+
+    </footer>
+    </all>
+    <menu id="menu">
+        <div class="menu-down">
+            <p onclick="closemenu()">Close</p>
+            <p onclick="window.location.href = '/portal'">Portal</p>
+            <p onclick="window.location.href = '/#docs'">DOCS</p>
+            <p onclick="window.location.href = '/#projects'">PROJECTS</p>
+        </div>
+    </menu>
+
+
+</body>
+<script>
+    function openmenu() {
+        document.getElementById("all").style.display = "none";
+        document.getElementById("menu").style.display = "flex";
+    }
+    function closemenu() {
+        document.getElementById("all").style.display = "unset"
+        document.getElementById("menu").style.display = "none"
+    }
+</script>
+
+</html>
