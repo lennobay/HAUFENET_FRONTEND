@@ -6,54 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haufenet | Datenbanken </title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest"> <link rel="stylesheet" href="/index.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/index.css">
 </head>
 
 <body>
-    <all id ="all">
-    <header>
+    <all id="all">
+        <header>
 
-        <div>
-            <h1 onclick="window.location.href = '/'">HFT</h1>
+            <div>
+                <h1 onclick="window.location.href = '/'">HFT</h1>
+            </div>
+            <div id="header-options">
+                <p onclick="window.location.href = '/#docs'">DOCS</p>
+                <p onclick="window.location.href = '/#projects'">PROJECTS</p>
+            </div>
+            <div>
+                <h2 onclick="window.location.href = '/portal'">Portal</h2>
+                <p onclick="openmenu()" id="menu-button">Menu</p>
+            </div>
+        </header>
+
+        <div class="content-up">
+            <div class="content">
+                <h1>Datenbanken Grundlagen</h1>
+                <i>Status: In creation ( last edit: 17:21, 06.10.2026)</i>
+                <p>Datenbanken benutzten wir jeden Tag auf diesem Planet, so lange man das Internet benutzt. Hierbei
+                    braucht man die sowohl in Discord, Instagram, Teams oder in jeglichen anderen Applikationen. Somit
+                    stellen diese einen wichtigen Teil des gesamten Internetes dar.</p>
+                <h2>Was ist eine Datenbank?</h2>
+                <p>Eine Datenbank ermöglicht es Daten in einer strukturierten Form zu speichern und deren Zugriff so
+                    einfach wie möglich zu gestalten. Um diese zu strukturieren werden dabei verschiedenste "Modelle"
+                    benutzt. Eines davon ist das Modell der Relationalen Datenbank, mit welchem wir uns beschäftigen
+                    werden. Dabei gibt es auch andere Beispiele wie Beispielsweise Redis. Diese unterstützt hierbei
+                    verschiedenste Arten die Daten zu speichern, ob als Hash, Tabelle oder JSON. Doch es vereint ein
+                    einheitliches system in welchem Datensätze mit einem Key Value Prinzip gespeichert werden. MongoDB
+                    verfolgt hierbei eher in teilen ein similares System aber unterstützt nur ein JSON-artiges Format
+                    für desen Datensatzen. Die besten Beispiele für die Relationalen Datenbanksystemen sind hierbei
+                    Postgresql ( mein Favorit), MySQL sowie Mariadb. Die letzteren haben aber zurzeit exstenziäle
+                    Probleme.</p>
+                <h2>Aufbauprinzip eines Datenbanksystemes</h2>
+                <p>Ein Datenbanksystem besteht dabei aus mehrern Teilen.</p>
+            </div>
         </div>
-        <div id="header-options">
-            <p onclick="window.location.href = '/#docs'">DOCS</p>
-            <p onclick="window.location.href = '/#projects'">PROJECTS</p>
-        </div>
-        <div>
-            <h2 onclick="window.location.href = '/portal'">Portal</h2>
-            <p onclick="openmenu()" id="menu-button">Menu</p>
-        </div>
-    </header>
 
-    <div class="content-up">
-        <div class="content">
-            <h1>Datenbanken Grundlagen</h1>
-            <i>Status: In creation ( last edit: 17:21, 06.10.2026)</i>
-            <p>Datenbanken benutzten wir jeden Tag auf diesem Planet, so lange man das Internet benutzt. Hierbei braucht man die sowohl in Discord, Instagram, Teams oder in jeglichen anderen Applikationen. Somit stellen diese einen wichtigen Teil des gesamten Internetes dar.</p>
-            <h2>Was ist eine Datenbank?</h2>
-            <p>Eine Datenbank ermöglicht es Daten in einer strukturierten Form zu speichern und deren Zugriff so einfach wie möglich zu gestalten. Um diese zu strukturieren werden dabei verschiedenste "Modelle" benutzt. Eines davon ist das Modell der Relationalen Datenbank, mit welchem wir uns beschäftigen werden. Dabei gibt es auch andere Beispiele wie Beispielsweise Redis. Diese unterstützt hierbei verschiedenste Arten die Daten zu speichern, ob als Hash, Tabelle oder JSON. Doch es vereint ein einheitliches system in welchem Datensätze mit einem Key Value Prinzip gespeichert werden. MongoDB verfolgt hierbei eher in teilen ein similares System aber unterstützt nur ein JSON-artiges Format für desen Datensatzen. Die besten Beispiele für die Relationalen Datenbanksystemen sind hierbei Postgresql ( mein Favorit), MySQL sowie Mariadb. Die letzteren haben aber zurzeit exstenziäle Probleme.</p>
-            <h2>Aufbauprinzip eines Datenbanksystemes</h2>
-            <p>Ein Datenbanksystem besteht dabei aus mehrern Teilen.</p>
-        </div>
-    </div>
+        <footer>
 
-    <footer>
+            <div>
+                <p onclick="window.location.href = '/imprint'">Imprint</p>
+                <p onclick="window.location.href = '/privacy'">Privacy</p>
+            </div>
+            <div>
+                <p style="font-weight: bold; color: hsl(0 0% 95%);">&copy; haufenet.com | created by Human, no AI</p>
 
-        <div>
-            <p onclick="window.location.href = '/imprint'">Imprint</p>
-            <p onclick="window.location.href = '/privacy'">Privacy</p>
-        </div>
-        <div>
-            <p style="font-weight: bold; color: hsl(0 0% 95%);">&copy; haufenet.com | created by Human, no AI</p>
-
-        </div>
+            </div>
 
 
-    </footer>
-</all>
+        </footer>
+    </all>
     <menu id="menu">
         <div class="menu-down">
             <p onclick="closemenu()">Close</p>
@@ -66,7 +78,7 @@
 
 </body>
 <script>
-        function openmenu() {
+    function openmenu() {
         document.getElementById("all").style.display = "none";
         document.getElementById("menu").style.display = "flex";
     }
